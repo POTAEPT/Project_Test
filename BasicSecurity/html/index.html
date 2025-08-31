@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Security Lab</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <h1>Web Application Security Lab</h1>
+
+  <h2>Password Checker</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Check Strength</button>
+  <p id="passwordResult"></p>
+
+  <h2>Login Simulation (SQL Injection Safe)</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button onclick="safeLogin()">Login</button>
+  <p id="loginResult"></p>
+
+  <h2>Comment Box (XSS Prevention)</h2>
+  <input type="text" id="comment" placeholder="Enter comment">
+  <button onclick="addComment()">Submit</button>
+  <ul id="comments"></ul>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>
